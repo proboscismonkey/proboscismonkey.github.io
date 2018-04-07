@@ -1,0 +1,99 @@
+html, body {
+	margin: 0;
+	font-family: arial;
+	font-size:20px;
+	font-style:italic;
+	text-align: center;
+	background-image: url("bg.gif");
+
+}
+
+@keyframes rainbow {
+	0% {background-color: red;}
+	20% {background-color: orange;}
+	40% {background-color: yellow;}
+	60% {background-color: green;}
+	80% {background-color: blue;}
+	100% {background-color: purple;}
+}
+
+@keyframes change {
+	0% {transform: translate(-100px);}
+	50% {transform: translate(100px);}
+	100% {transform: translate(-100px);}
+}
+
+p, h2{
+animation-name: change;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+}
+
+p {
+	color:white;
+
+}
+
+h1 {
+	color:white;
+	animation-name: rainbow;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+h2{
+	color:white;
+}
+
+
+
+marquee{
+	background-color:white;
+	color:black;
+}
+
+marquee img{
+	height:50px;
+}
+
+.brown {
+	color:black;
+}
+
+#page-wrapper {
+	padding: 0 10% 0 10%;
+}
+
+#page-wrapper > * {
+	padding: 50px;
+	margin: auto;
+	height: auto;
+}
+
+
+#doubleyellow {
+	display: inline-block;
+
+}
+
+#doubleyellow > img  {
+	width: 45%;
+	margin: 0 20px 0 20px;
+}
+
+
+#white > img {
+	width: 30.3%;
+}
+
+#content_holder {
+	display: inline-block;
+}
+
+.content {
+	width: 44.5%;
+	float: left;
+	margin: 2%;
+	border: 1px dashed white;
+	padding: 5px;
+}
